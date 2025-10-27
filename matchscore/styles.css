@@ -1,50 +1,74 @@
 @page {
-    size: A5;
-    margin: 10mm;
-  }
-  body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #000;
-    background: #fff;
-  }
-  .report {
-    border: 2px solid #000;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  h1 {
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin: 0 0 10px;
-  }
-  .topline {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 6px;
-  }
-  th, td {
-    border: 1px solid #000;
-    padding: 3px 5px;
-    font-size: 13px;
-    text-align: center;
-  }
-  th.section {
-    background: #e0e0e0;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  td.label {
-    text-align: center;
-    font-weight: 600;
-  }
-  .notes td {
-    height: 30px;
-  }
+  size: A5;
+  margin: 10mm;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+.report {
+  border: 2px solid #000;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 6px;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 3px 5px;
+  font-size: 13px;
+  text-align: center;
+}
+
+th.section {
+  background: #e0e0e0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+td.label {
+  text-align: center;
+  font-weight: 400;
+  width: 25%;
+}
+
+.notes td {
+  height: 120px;
+}
+
+/* apply only to 3-column tables */
+table:not(.notes) td:nth-child(1),
+table:not(.notes) th:nth-child(1),
+table:not(.notes) td:nth-child(3),
+table:not(.notes) th:nth-child(3) {
+  width: 35%;
+}
+
+table:not(.notes) td:nth-child(2),
+table:not(.notes) th:nth-child(2) {
+  width: 30%;
+}
