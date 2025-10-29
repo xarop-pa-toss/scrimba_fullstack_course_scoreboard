@@ -1,8 +1,77 @@
+@font-face {
+  font-family: 'CursedTimerUlil';
+  src: url('CursedTimerUlil-Aznm.ttf') format('truetype');
+}
+
 body {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
     margin: 0;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    margin: 30px auto;
+    
+    width: 575px;
+    height: 385px;
+    
+    background-color: #064E3B;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    
+    margin: 21px 0 26px 0;
+    padding-top: 10px;
+}
+
+.score-text{
+    font-family: "CursedTimerUlil";
+    color: #D97706;
+    font-size: 90px;
+}
+
+
+.score-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 155px;
+}
+
+.score-button {
+    height: 45px;
+    width: 45px;
+    
+    background-color: transparent;
+    border: 2px solid #059669;
+    border-radius: 5px;
+    
+    font-family: "CursedTimerUlil";
+    color: #059669;
 }
