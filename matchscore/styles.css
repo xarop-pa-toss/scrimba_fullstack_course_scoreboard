@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: sans-serif;
   color: #000;
   background: #fff;
 }
@@ -26,6 +26,7 @@ h1 {
 .topline {
   display: flex;
   justify-content: space-between;
+
   font-size: 14px;
   margin-bottom: 8px;
 }
@@ -46,18 +47,18 @@ td {
 
 th.section {
   background: #e0e0e0;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: capitalize;
 }
 
 td.label {
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   width: 25%;
 }
 
 .notes td {
-  height: 120px;
+  height: 100px;
 }
 
 /* apply only to 3-column tables */
